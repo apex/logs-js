@@ -4,10 +4,10 @@ JavaScript client for [Apex Logs](https://apex.sh/logs/) with support for Node.j
 
 ## Node
 
-Here's an example of usages in Node, using the `apex-logs` NPM package for Node and browser support:
+Here's an example of usage in Node or the browser using the `apex-logs` NPM package:
 
 ```js
-import Client from 'apex-logs'
+const { Client } = require('apex-logs')
 
 const client = new Client({
   url: '<ENDPOINT>',
