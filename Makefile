@@ -1,13 +1,13 @@
 
 all: dist dist.browser
 
-dist: index.ts
+dist: logs.ts
 	@tsc --declaration -p tsconfig.json
 
-dist.browser: index.ts
+dist.browser: logs.ts
 	@tsc --declaration -p tsconfig.browser.json
 
-index.ts: $(SCHEMA)
+logs.ts: $(SCHEMA)
 	@echo "==> create $@"
 	@rpc-ts-client \
 		-schema $(SCHEMA) \
@@ -19,7 +19,7 @@ test:
 .PHONY: test
 
 clean:
-	@rm -f index.ts
+	@rm -f logs.ts
 	@rm -fr dist.browser
 	@rm -fr dist
 .PHONY: clean
