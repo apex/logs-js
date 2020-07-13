@@ -1,0 +1,1 @@
+Changes to the generated client should be contributed to the generator [github.com/apex/rpc](https://github.com/apex/rpc/), not the generated file(s) in this repo, thanks!
