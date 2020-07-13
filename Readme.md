@@ -2,6 +2,12 @@
 
 JavaScript client for [Apex Logs](https://apex.sh/logs/) with support for Node.js, Deno, and the browser.
 
+## Installation
+
+```
+npm install --save apex-logs
+```
+
 ## Node
 
 Here's an example of usage in Node or the browser using the `apex-logs` NPM package:
