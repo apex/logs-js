@@ -18,7 +18,7 @@ async function run() {
   const { projects } = await client.getProjects()
   console.log(projects)
   
-  const { alerts } = await client.getAlerts({ project_id: 'production' })
+  const { alerts } = await client.getAlerts({ projectId: 'production' })
   console.log(alerts)
 }
 
@@ -40,7 +40,7 @@ const client = new Client({
 const { projects } = await client.getProjects()
 console.log(projects)
 
-const { alerts } = await client.getAlerts({ project_id: 'ping_production' })
+const { alerts } = await client.getAlerts({ projectId: 'ping_production' })
 console.log(alerts)
 ```
 
