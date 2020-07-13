@@ -30,7 +30,7 @@ run()
 Here's an example of usage in Deno:
 
 ```js
-import { Client } from './index.ts'
+import { Client } from 'https://deno.land/x/apex_logs/client.ts'
 
 const client = new Client({
   url: '<ENDPOINT>',
