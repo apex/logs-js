@@ -5,5 +5,5 @@
     "module": "es2015",
     "lib": ["es2016", "dom", "es5"]
   },
-  "include": ["index.ts"]
+  "include": ["client.ts"]
 }

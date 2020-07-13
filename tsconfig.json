@@ -5,6 +5,6 @@
     "module": "commonjs",
     "moduleResolution": "node"
   },
-  "include": ["index.ts"],
+  "include": ["client.ts"],
   "exclude": ["node_modules"]
 }
