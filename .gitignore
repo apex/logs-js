@@ -4,3 +4,4 @@ dist
 dist.browser
 test.ts
 test.deno.ts
+test.js
