@@ -141,7 +141,7 @@ export interface Notification {
   webhook_url?: string
 }
 
-// Project represents a customer application.
+// Project represents an isolated set of log events and alerts. A project can be created for each application, environment, or team within an organization depending on your preferences.
 export interface Project {
   // created_at is a timestamp indicating when the project was created. This field is read-only.
   created_at?: Date
@@ -154,6 +154,9 @@ export interface Project {
 
   // location is the geographical location where the log events are stored. This field is required. Must be one of: "us-west2", "northamerica-northeast1", "us-east4", "southamerica-east1", "europe-north1", "europe-west2", "europe-west6", "asia-east2", "asia-south1", "asia-northeast2", "asia-east1", "asia-northeast1", "asia-southeast1", "australia-southeast1".
   location: string
+
+  // mode is the storage mode, optimized for plain-text or structured logs. Both options support plain-text and structured logging, however, the structured mode shards on the `message` value, restricting its length to 1024 bytes. This field is required. Must be one of: "plain_text", "structured".
+  mode: string
 
   // name is the human-friendly project name. This field is required.
   name: string
